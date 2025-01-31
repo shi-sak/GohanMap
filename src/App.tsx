@@ -114,14 +114,14 @@ function App() {
         )}
 
       {/* マップ外に選択されたマーカーの名前を表示 */}
-      <p>
+      <div>
         {selectedLocationname && (
           <div>
           <h3>{selectedLocationname}</h3>
           <p>{selectedLocationdesc}</p>
           </div>
         )}
-      </p>
+      </div>
 
       </header>
       <main>
