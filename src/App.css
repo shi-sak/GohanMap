@@ -40,17 +40,15 @@
   color: #888;
 }
 
-/* 地図の親要素を中央揃え */
-.map-wrapper {
+/* 地図のサイズ設定 */
+.map-container {
   display: flex;
   justify-content: center; /* 横方向に中央揃え */
   align-items: center; /* 縦方向に中央揃え */
-  width: 100%; /* 画面幅に合わせる */
-  height: 100vh; /* 画面高さに合わせる */
+  width: 100vh; 
+  height: 60vh; 
 }
 
-/* 地図のサイズ設定 */
-.map-container {
-  width: 100vh; 
-  height: 70vh; 
+.leaflet-tile {
+  image-rendering: crisp-edges; /* 画像をシャープに */
 }
