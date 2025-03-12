@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Map from "./components/Map";
-import Form from "./components/Form";
+//import Form from "./components/Form";
 import useCsvLoader from "./hooks/useCsvLoader";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -24,7 +24,6 @@ function App() {
           <Map latLng={latLng} setLatLng={setLatLng} locations={locations} handleMarkerClick={handleMarkerClick} />
         </div>
         <div>
-          <Form/>
         </div>
       </main>
       <Footer />

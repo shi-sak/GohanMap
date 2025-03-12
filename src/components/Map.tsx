@@ -14,8 +14,8 @@ interface MapProps {
 }
 
 export default function Map({ latLng, setLatLng, locations, handleMarkerClick }: MapProps) {
-  const akibaIdo = 35.69945956809054;
-  const akibaKeido = 139.77643225423614;
+  const akibaIdo = 35.69839015931542;
+  const akibaKeido = 139.7731409190271;
   const radius = 700;
   const bounds = L.latLng([akibaIdo, akibaKeido]).toBounds(radius * 2);
 
@@ -29,7 +29,7 @@ export default function Map({ latLng, setLatLng, locations, handleMarkerClick }:
       <LocationMarker setLatLng={setLatLng} />
       <StoreMarker locations={locations} handleMarkerClick={handleMarkerClick} />
       <Marker position={[akibaIdo, akibaKeido]} icon={blueIcon}>
-        <Popup>EVC</Popup>
+        <Popup>秋葉原駅</Popup>
       </Marker>
       {latLng && (
         <Marker position={latLng} icon={L.icon({ iconUrl: '../images/marker-icon-2x.png', iconSize: [25, 41] })}>
